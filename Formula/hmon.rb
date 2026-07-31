@@ -5,21 +5,21 @@
 class Hmon < Formula
   desc "Terminal dashboard for a small fleet of Linux machines over SSH"
   homepage "https://github.com/Sousf/hmon"
-  version "0.1.2"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Sousf/hmon/releases/download/v0.1.2/hmon_0.1.2_darwin_amd64.tar.gz"
-      sha256 "bcc4818452a0ed63f1c5962679fd587016a54079ad624bb58f71eb5fd78f5408"
+      url "https://github.com/Sousf/hmon/releases/download/v0.2.0/hmon_0.2.0_darwin_amd64.tar.gz"
+      sha256 "f25a7daa3bd8cf8e91e4e92919ece922a70a34ab266c276eef95d4ef60f89f08"
 
       define_method(:install) do
         bin.install "hmon"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Sousf/hmon/releases/download/v0.1.2/hmon_0.1.2_darwin_arm64.tar.gz"
-      sha256 "81de356a749021a9d5784e03b70c6ef032659356bc6d580a960e6882d970d79c"
+      url "https://github.com/Sousf/hmon/releases/download/v0.2.0/hmon_0.2.0_darwin_arm64.tar.gz"
+      sha256 "5677de71010bc44412e47c85906f4983e6d13e4c9e42358f701f7695240a85c1"
 
       define_method(:install) do
         bin.install "hmon"
@@ -29,15 +29,15 @@ class Hmon < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Sousf/hmon/releases/download/v0.1.2/hmon_0.1.2_linux_amd64.tar.gz"
-      sha256 "71c973deab48e41d358fd04376d6f890e84e863f233f81e4deb32306e9cd49fc"
+      url "https://github.com/Sousf/hmon/releases/download/v0.2.0/hmon_0.2.0_linux_amd64.tar.gz"
+      sha256 "008bb1988de1bc16d769a2525e3bf9b24ddc7c69a9fde5f94f510f73e5115ca6"
       define_method(:install) do
         bin.install "hmon"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Sousf/hmon/releases/download/v0.1.2/hmon_0.1.2_linux_arm64.tar.gz"
-      sha256 "a7273de4f0d5e2df57f2cecd56d784471767373bff081ae6f479276ca21a8d8a"
+      url "https://github.com/Sousf/hmon/releases/download/v0.2.0/hmon_0.2.0_linux_arm64.tar.gz"
+      sha256 "5709fefbbcdfee18794b73082502f1516100809519f8fe6f939187069ef13461"
       define_method(:install) do
         bin.install "hmon"
       end

@@ -5,21 +5,21 @@
 class Marshal < Formula
   desc "Agentic maintainer that keeps a fleet of repositories secure"
   homepage "https://github.com/Sousf/marshal"
-  version "0.1.4"
+  version "0.1.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Sousf/marshal/releases/download/v0.1.4/marshal_0.1.4_darwin_amd64.tar.gz"
-      sha256 "eb79df136c5329a4b6feb48dbac0ae856f1573b64b3a9fe8d42876ee70e3d32b"
+      url "https://github.com/Sousf/marshal/releases/download/v0.1.5/marshal_0.1.5_darwin_amd64.tar.gz"
+      sha256 "f314649f25fe6d7c457418541c1c7c7c17f38b777941380c9caeb83da04159f5"
 
       define_method(:install) do
         bin.install "marshal"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Sousf/marshal/releases/download/v0.1.4/marshal_0.1.4_darwin_arm64.tar.gz"
-      sha256 "2f4a1c8e4d7d34bc1b930ace71fb7118e072e654886020232638a0c727c64194"
+      url "https://github.com/Sousf/marshal/releases/download/v0.1.5/marshal_0.1.5_darwin_arm64.tar.gz"
+      sha256 "171fdaece4d7ed7e0ac345d28f5e5be5763f919f440fc298333d519e93d55967"
 
       define_method(:install) do
         bin.install "marshal"
@@ -29,15 +29,15 @@ class Marshal < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Sousf/marshal/releases/download/v0.1.4/marshal_0.1.4_linux_amd64.tar.gz"
-      sha256 "a9d4ef7057fe3189624b2646d449782b3fcdd2fe1acd2954056acf82bf91338b"
+      url "https://github.com/Sousf/marshal/releases/download/v0.1.5/marshal_0.1.5_linux_amd64.tar.gz"
+      sha256 "ed13ca95dbc7ff5bbd21c239ac8696b30a017a176b0673c1dc5b499234739eb8"
       define_method(:install) do
         bin.install "marshal"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Sousf/marshal/releases/download/v0.1.4/marshal_0.1.4_linux_arm64.tar.gz"
-      sha256 "a749f9d0a340e71463aaa1c6c829f7ddc2326766b3a7c7fa787b125f3b24ea6f"
+      url "https://github.com/Sousf/marshal/releases/download/v0.1.5/marshal_0.1.5_linux_arm64.tar.gz"
+      sha256 "145bfb4519ba6c3f66333dd685d77f393078258182cef71b473dac687fa6a408"
       define_method(:install) do
         bin.install "marshal"
       end

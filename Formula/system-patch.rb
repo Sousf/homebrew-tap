@@ -5,20 +5,20 @@
 class SystemPatch < Formula
   desc "A TUI tool that helps you determine whether to install a package update."
   homepage "https://github.com/Sousf/system-patch"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
   depends_on :linux
 
   if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-    url "https://github.com/Sousf/system-patch/releases/download/v0.1.1/system-patch_0.1.1_linux_amd64.tar.gz"
-    sha256 "ebfceb60cea7917fb530050f2dc836126245e994249658b5a2ad01c05c658a68"
+    url "https://github.com/Sousf/system-patch/releases/download/v0.1.2/system-patch_0.1.2_linux_amd64.tar.gz"
+    sha256 "5b67e620fc87531f5bdf2df79fbd5299a1901400735fd708e1446dbdb14c894c"
     define_method(:install) do
       bin.install "system-patch"
     end
   end
   if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/Sousf/system-patch/releases/download/v0.1.1/system-patch_0.1.1_linux_arm64.tar.gz"
-    sha256 "e336adb90894516395593a074fa787b31f681f4ac511746e9545d40fd52ff390"
+    url "https://github.com/Sousf/system-patch/releases/download/v0.1.2/system-patch_0.1.2_linux_arm64.tar.gz"
+    sha256 "ab99fdb029b6f8c94a78eff635a50a07207cf36484d1ad487ed1b9f70c7eccd9"
     define_method(:install) do
       bin.install "system-patch"
     end

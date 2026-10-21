@@ -5,21 +5,21 @@
 class SpotifyTui < Formula
   desc "Terminal remote control for Spotify with an audio visualiser"
   homepage "https://github.com/Sousf/spotify-tui"
-  version "0.1.2"
+  version "0.1.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Sousf/spotify-tui/releases/download/v0.1.2/spotify-tui_0.1.2_darwin_amd64.tar.gz"
-      sha256 "cc04987252c279c25f21a2e23ff783c144100812d1c21609a705fefb70e427d1"
+      url "https://github.com/Sousf/spotify-tui/releases/download/v0.1.3/spotify-tui_0.1.3_darwin_amd64.tar.gz"
+      sha256 "be9728b3f7feae45f161a45bd86a228f2bd15f4e2f74e90f123c9fec328e9fd3"
 
       define_method(:install) do
         bin.install "spotify-tui"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Sousf/spotify-tui/releases/download/v0.1.2/spotify-tui_0.1.2_darwin_arm64.tar.gz"
-      sha256 "eb5928e3f4b420cf42e338b190cf97023660d9d2107d28b8dae6f992cae5c49f"
+      url "https://github.com/Sousf/spotify-tui/releases/download/v0.1.3/spotify-tui_0.1.3_darwin_arm64.tar.gz"
+      sha256 "27e38a1d26c0922c08be3c4e3095763d554f066116b50bd9f84039717c8d5203"
 
       define_method(:install) do
         bin.install "spotify-tui"
@@ -29,15 +29,15 @@ class SpotifyTui < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Sousf/spotify-tui/releases/download/v0.1.2/spotify-tui_0.1.2_linux_amd64.tar.gz"
-      sha256 "6a1c4409450171a1929886d9384bc01ccd4aa649b110287d4223a3d78a86040f"
+      url "https://github.com/Sousf/spotify-tui/releases/download/v0.1.3/spotify-tui_0.1.3_linux_amd64.tar.gz"
+      sha256 "1e3d073e1418c16a1024b979f5567dfa0f432137a50125271119c4a567d990b6"
       define_method(:install) do
         bin.install "spotify-tui"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Sousf/spotify-tui/releases/download/v0.1.2/spotify-tui_0.1.2_linux_arm64.tar.gz"
-      sha256 "b011d06df4c10f715c7414ac9bbdc64a99f89f43eaf844d55fbfecf616732da8"
+      url "https://github.com/Sousf/spotify-tui/releases/download/v0.1.3/spotify-tui_0.1.3_linux_arm64.tar.gz"
+      sha256 "81d34b7b409188e4ceea79264ff3239498ec3b287ff392f0005c06cdfe2ea5a7"
       define_method(:install) do
         bin.install "spotify-tui"
       end

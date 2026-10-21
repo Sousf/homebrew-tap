@@ -5,21 +5,21 @@
 class Marshal < Formula
   desc "Agentic maintainer that keeps a fleet of repositories secure"
   homepage "https://github.com/Sousf/marshal"
-  version "0.1.9"
+  version "0.1.10"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Sousf/marshal/releases/download/v0.1.9/marshal_0.1.9_darwin_amd64.tar.gz"
-      sha256 "6a26fda8367ad3cc535b44e1e6faa0f47e6f2c8c77a90e2c7c2028814108fc2e"
+      url "https://github.com/Sousf/marshal/releases/download/v0.1.10/marshal_0.1.10_darwin_amd64.tar.gz"
+      sha256 "7c73221471b0eb93c3cc490dffd19e5955354edc740515eec76ea2823f3552fc"
 
       define_method(:install) do
         bin.install "marshal"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Sousf/marshal/releases/download/v0.1.9/marshal_0.1.9_darwin_arm64.tar.gz"
-      sha256 "f681c712111732249029437a7a8388edcdd16c93f4df15288d31e0b279672abe"
+      url "https://github.com/Sousf/marshal/releases/download/v0.1.10/marshal_0.1.10_darwin_arm64.tar.gz"
+      sha256 "6afcafa57ed063d9e3a7cda50cbff65035f791d8e06c0921d996e67efd97523d"
 
       define_method(:install) do
         bin.install "marshal"
@@ -29,15 +29,15 @@ class Marshal < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Sousf/marshal/releases/download/v0.1.9/marshal_0.1.9_linux_amd64.tar.gz"
-      sha256 "f50aae2a2f318222269e288ea829caf7eb3f05cac4be6cf406b18015513bff0e"
+      url "https://github.com/Sousf/marshal/releases/download/v0.1.10/marshal_0.1.10_linux_amd64.tar.gz"
+      sha256 "26b5e657310e93bfa39434e14da604d10d56bd352787c17511984da7b6a822e4"
       define_method(:install) do
         bin.install "marshal"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Sousf/marshal/releases/download/v0.1.9/marshal_0.1.9_linux_arm64.tar.gz"
-      sha256 "01e7a332a127cff20f18f7767885e7d0fb915490a44701c785f05e04a7f4dc83"
+      url "https://github.com/Sousf/marshal/releases/download/v0.1.10/marshal_0.1.10_linux_arm64.tar.gz"
+      sha256 "4cdcd021e558cdedd72a6ee2c72d5d50060cd8fc20e4fe809973bd8559d21448"
       define_method(:install) do
         bin.install "marshal"
       end
